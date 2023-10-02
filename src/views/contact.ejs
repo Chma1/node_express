@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <%- include('partialns/headers.ejs')%> <%-
+    include('partialns/img_principal.ejs')%>
+  </head>
+  <body>
+    <%- include('partialns/navegation.ejs') %>
+    <main>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="card col-sm-6 my-5 p-2">
+            <div class="card-head my-2">
+              <h3 class="text-center">Contact Me</h3>
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label class="label-control mb-2" for="user">Nombre:</label>
+                <input
+                  class="form-control mb-2"
+                  type="text"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="form-group">
+                <label class="label-control mb-2" for="email">@mail:</label>
+                <input
+                  class="form-control mb-2"
+                  type="email"
+                  placeholder="tucorreo@correo"
+                />
+              </div>
+              <div class="form-group">
+                <label class="label-control mb-2" for="user"
+                  >Tu mensaje:
+                </label>
+                <textarea
+                  class="form-control mb-3"
+                  type="text"
+                  placeholder="Agrega tu mensaje "
+                ></textarea>
+              </div>
+              <div class="btn_action d-flex justify-content-center">
+                <button class="btn btn-primary w-50">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+        <footer><%- include('partialns/footer.ejs') %></footer>
+  </body>
+</html>
